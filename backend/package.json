@@ -12,6 +12,5 @@
     "express": "^4.17.3",
     "mongoose": "^5.13.14"
   },
-  "devDependencies": {},
   "description": ""
 }
