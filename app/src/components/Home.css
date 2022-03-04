@@ -1,0 +1,48 @@
+
+
+.letter1{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 7.4rem;
+    
+
+}
+
+
+.padre{
+    margin-top: 145px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal{
+    width: 100%;
+}
+
+
+.florcontainer{
+    width: 30%;
+    margin-top: 40px;    
+}
+
+.information{
+    width: 65%;
+    margin-top: 60px; 
+}
+
+.letter1{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 7.4rem;
+    
+
+}
+
+.colleguephotos{
+    width: 100%;
+    padding: 50px;
+    margin: -10px 0px -25px;
+        
+}

@@ -1,57 +1,32 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import todos from "./apis";
+import "./index.css"
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import ListCheck from "./pages/ListCheck";
+import List from "./pages/Listhome";
+import Listhome from "./pages/Listhome";
 
-import Form from "./components/Form";
-import Section from "./components/Section";
-import List from "./components/List";
 
-const appTitle = "To-Do App";
-
-const App = () => {
-    const [todoList, setTodoList] = useState([]);
-
-    useEffect(() => {
-        async function fetchData() {
-            const { data } = await todos.get("/todos");
-            setTodoList(data);
-        }
-
-        fetchData();
-    }, []);
-
-    const addTodo = async (item) => {
-        const { data } = await todos.post("/todos", item);
-        setTodoList((oldList) => [...oldList, data]);
-    };
-
-    const removeTodo = async (id) => {
-        await todos.delete(`/todos/${id}`);
-        setTodoList((oldList) => oldList.filter((item) => item._id !== id));
-    };
-
-    const editTodo = async (id, item) => {
-        await todos.put(`/todos/${id}`, item);
-    };
-
+function App() {
     return (
-        <div className="ui container center aligned">
-            <Section>
-                <h1>{appTitle}</h1>
-            </Section>
-
-            <Section>
-                <Form addTodo={addTodo} />
-            </Section>
-
-            <Section>
-                <List
-                    editTodoListProp={editTodo}
-                    removeTodoListProp={removeTodo}
-                    list={todoList}
-                />
-            </Section>
+      <>
+        <div className="App">
+         
+          
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />}></Route>
+              <Route path="/Checklist" element={<Listhome />}></Route> 
+              <Route path="/List" element={<ListCheck />}></Route>
+            </Routes>
+          </Router>
+        
         </div>
+      </>
     );
-};
-
-export default App;
+  }
+  
+  export default App;
+  
