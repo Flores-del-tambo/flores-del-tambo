@@ -11,9 +11,9 @@ const Home = () => {
   return (
     <div className="padre">
     
-         <img src={line} className={info} alt="info " />
+         <img src={line} className={info} className="line" alt="line " />
         <h1 className={info}> FLORES DEL TAMBO</h1>
-        <img src={line} className={info} alt="line " />
+        <img src={line} className={info} className="line" alt="line " />
         <div className="florcontainer">
           <img src={flor} className="principal" alt="Information " />
         </div>

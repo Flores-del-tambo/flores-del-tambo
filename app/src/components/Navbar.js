@@ -33,8 +33,10 @@ const Navbar = () => {
           <p className='home-p'>Home</p>
           </Link>
      
-      
-        <img className='check-icon' src={checkWhite} alt="Store" />
+          <Link to="/Checklist"> 
+          <img className='check-icon' src={checkWhite} alt="Store" />
+          </Link>
+        
 
       
         <img className='check-iconb' src={checkBlack} alt="Store" />
