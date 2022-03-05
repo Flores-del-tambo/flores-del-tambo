@@ -45,10 +45,15 @@ const Navbar = () => {
         <Link to="/Checklist"> 
         <p className='check-p'>Tasks</p>
         </Link>
+
+        
         
         <img className='calendar-icon' src={calendarWhite} alt="Store" />
         <img className='calendar-iconb' src={calendarBlack} alt="Store" />
+        <Link to="/List">
         <p className='calendar-p'>Dates</p>
+        </Link>
+        
     </div>
     <hr />
     

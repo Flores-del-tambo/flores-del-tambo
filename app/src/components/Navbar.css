@@ -23,6 +23,7 @@
 .home-icon, .check-icon, .calendar-icon, .home-iconb, .check-iconb, .calendar-iconb {
     width: 25px;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 .home-iconb, .check-iconb, .calendar-iconb {

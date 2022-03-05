@@ -18,8 +18,9 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />}></Route>
-              <Route path="/Checklist" element={<Listhome />}></Route> 
-              <Route path="/List" element={<ListCheck />}></Route>
+              <Route path="/Checklist" element={<ListCheck />}></Route> 
+              <Route path="/List" element={<Listhome />}></Route>
+              
             </Routes>
           </Router>
         
